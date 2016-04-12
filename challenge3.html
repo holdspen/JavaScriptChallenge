@@ -4,22 +4,18 @@
 	<meta charset="UTF-8">
 	<title>Challenge 3</title>
     <script type="text/javascript">
-    function checkBoxes()
+    function checkForm()
     {
-      if(document.getElementById('optstraw').checked == false && document.getElementById('optblue').checked == false) 
+      var optStrawberry = document.getElementById("optstraw");
+      var optBlueberry = document.getElementById("optblue");
+      if(optStrawberry.checked == false && optBlueberry.checked == false) 
       {
-      	alert("You must select at least one option");
+        window.alert("You must select at least one option");
         return false;
       }
-      else if(document.getElementById('optstraw').checked == true && document.getElementById('optblue').checked == false) 
-      {
-        document.checkForm.submit();
-      }
-      else if(document.getElementById('optblue').checked == true && document.getElementById('optstraw').checked == false)
-      {
-        document.checkForm.submit();
-      }
-    } 
+      else
+        return true;
+    }    
     </script>
 </head>
 <body>

@@ -4,7 +4,21 @@
 	<meta charset="UTF-8">
 	<title>Challenge 3</title>
     <script type="text/javascript">
-    /*    Your code here  */    
+    function checkBoxes()
+    {
+      if(document.getElementById('optstraw').checked == false && document.getElementById('optblue').checked == false) 
+      {
+        return false
+      }
+      else if(document.getElementById('optstraw').checked == true && document.getElementById('optblue').checked == false) 
+      {
+        document.checkForm.submit();
+      }
+      else if(document.getElementById('optblue').checked == true && document.getElementById('optstraw').checked == false)
+      {
+        document.checkForm.submit();
+      }
+    }    
     </script>
 </head>
 <body>

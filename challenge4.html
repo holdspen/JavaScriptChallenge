@@ -16,9 +16,11 @@
     function checkForm(){
       if(document.fullname.fullname.value==""){
         document.getElementByClassName("errormsg").style.visibility = "visible";
+        return false;
       }
       else if(document.streetaddr.streetaddr.value==""){
         document.getElementByClassName("errormsg").style.visibility = "visible";
+        return false;
       }
       else
         return true;

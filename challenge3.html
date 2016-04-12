@@ -19,7 +19,12 @@
       {
         document.checkForm.submit();
       }
-    }    
+    } 
+    console.log(if(document.getElementById('optstraw').checked == false && document.getElementById('optblue').checked == false) 
+      {
+      	alert("You must select at least one option");
+        return false;
+      })
     </script>
 </head>
 <body>

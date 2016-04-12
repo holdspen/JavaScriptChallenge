@@ -4,11 +4,25 @@
 	<meta charset="UTF-8">
 	<title>Challenge 4</title>
     <style>
-    /*    Your code here  */    
+    #errormsg {
+      color: red;
+      font-weight: bold;
+      font-style: "Trebuchet MS", Helvetica, sans-serif;
+      visibility: hidden;
+    }   
     </style>
     
     <script type="text/javascript">
-    /*    Your code here  */    
+    function checkForm(){
+      if(document.fullname.fullname.value==""){
+        document.getElementByClassName("errormsg").style.visibility = "visible";
+      }
+      else if(document.streetaddr.streetaddr.value==""){
+        document.getElementByClassName("errormsg").style.visibility = "visible";
+      }
+      else
+        return true;
+    }
     </script>
 </head>
 <body>

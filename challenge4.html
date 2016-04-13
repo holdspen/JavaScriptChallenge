@@ -21,12 +21,12 @@
     
     <script type="text/javascript">
     function checkForm(){
-      if(document.name.fullname.value=="")
+      if(document.getElementsByClassName("fullname").value=="")
       {
         document.getElementByClassName("nameerrormsg").style.visibility = "visible"
         return false;
       }
-      else if(document.name.streetaddr.value=="")
+      else if(document.getElementsByClassName("streetaddr").value=="")
       {
         document.getElementByClassName("addrerrormsg").style.visibility = "visible";
         return false;

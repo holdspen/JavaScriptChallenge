@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Challenge 4</title>
+  <meta charset="UTF-8">
+  <title>Challenge 4</title>
     <style>
     .errormsg {
       color: red;
@@ -21,14 +21,14 @@
     
     <script type="text/javascript">
     function checkForm(){
-      if(document.getElementsByClassName("fullname").value=="")
+      if(document.getElementById("fullname").value=="")
       {
-        document.getElementByClassName("nameerrormsg").style.visibility = "visible"
+        document.getElementById("nameerrormsg").style.visibility = "visible"
         return false;
       }
-      else if(document.getElementsByClassName("streetaddr").value=="")
+      else if(document.getElementById("streetaddr").value=="")
       {
-        document.getElementByClassName("addrerrormsg").style.visibility = "visible";
+        document.getElementById("addrerrormsg").style.visibility = "visible";
         return false;
       }
       else
@@ -37,7 +37,7 @@
     </script>
 </head>
 <body>
-	<form  action="mailto:me@fakeemail.com" onsubmit="return checkForm();">
+  <form  action="mailto:me@fakeemail.com" onsubmit="return checkForm();">
   <fieldset>
 
     <legend>Personal details</legend>

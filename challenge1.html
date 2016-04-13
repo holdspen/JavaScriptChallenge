@@ -14,6 +14,12 @@ Step 4: Making the email field toggle
 When you test your form at the moment, you'll notice that you can click on the checkbox and the email field displays, but when you un-check the checkbox the extra paragraph doesn't hide itself again!  Used the "checked" property to test whether a checkbox was checked.  Then use an if statement to toggle the emailfield appear and disappear as appropriate.
 -->
   <head>
+    <nav>
+      <a href = "http://holdspen.github.io/JavaScriptChallenge/challenge1.html">Challenge 1</a>
+      <a href = "http://holdspen.github.io/JavaScriptChallenge/challenge2.html">Challenge 2</a>
+      <a href = "http://holdspen.github.io/JavaScriptChallenge/challenge3.html">Challenge 3</a>
+      <a href = "http://holdspen.github.io/JavaScriptChallenge/challenge4.html">Challenge 4</a>
+    </nav>
     <title>JavaScript Challenges</title>
     <style>
       #emailfield{
@@ -22,7 +28,7 @@ When you test your form at the moment, you'll notice that you can click on the c
     </style>
     
     <script type="text/javascript">
-      function toggleEmail() {
+      function toggleEmail {
         if(document.getElementById('subscribe').checked){
           document.getElementById('emailfield').style.display = "block";
         }

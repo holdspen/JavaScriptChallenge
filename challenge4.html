@@ -21,9 +21,13 @@
     
     <script type="text/javascript">
     function checkForm(){
-      if(document.getElementById("fullname").value=="" || document.getElementById("streetaddr").value=="") 
+      if(document.getElementById("fullname").value=="") 
       {
         document.getElementById("nameerrormsg").style.visibility = "visible"
+        if(document.getElementById("streetaddr").value == "")
+        {
+          document.getElementById("addrerrormessage").style.visibility = "visible"
+        }
         return false;
       }
       else

@@ -21,9 +21,14 @@
     
     <script type="text/javascript">
     function checkForm(){
-      if(document.getElementById("fullname").value=="")
+      if(document.getElementById("fullname").value=="" && document.getElementById("streetaddr").value==""){
+        document.getElementById("nameerrormsg").style.visibility = "visible";
+        document.getElementById("addrerrormsg").style.visibility = "visible";
+        return false;
+      }
+      else if(document.getElementById("fullname").value=="")
       {
-        document.getElementById("nameerrormsg").style.visibility = "visible"
+        document.getElementById("nameerrormsg").style.visibility = "visible";
         return false;
       }
       else if(document.getElementById("streetaddr").value=="")
